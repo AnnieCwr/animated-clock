@@ -5,7 +5,7 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -15,7 +15,7 @@ html {
 }
 
 *, *::before, *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .clock-face {
@@ -42,7 +42,7 @@ html {
 .hand-hour {
   left: 9.1rem;
   bottom: 8.5rem;
-  animation: hour 6s linear infinite;
+  animation: spin 6s linear infinite;
   transform-origin: center 45px;
 }
 
@@ -54,16 +54,7 @@ html {
 }
 
 @keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
 
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes hour {
   from {
     transform: rotate(0deg);
   }
